@@ -20,7 +20,7 @@
                 <li s_data="like">
                     <i class="s"></i>
                     <a href="<?= $move_site[$item['web_id']][1] . $item['film_uri'] ?>">
-                        <span style="font-size: 18px;color: black;"><?= $move_site[$item['web_id']][0] ?>
+                        <span style="font-size: <?= strlen($item['episode_name']) > 10 ? 14 : 18 ?>px;color: black;"><?= $move_site[$item['web_id']][0] ?>
                             --<?= $item['episode_name'] ?></span>
                     </a>
                 </li>

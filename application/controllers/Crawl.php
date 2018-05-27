@@ -188,7 +188,7 @@ class Crawl extends CI_Controller
     public function reboview()
     {
         $url = 'https://www.y3600.com/';
-        $where = ['film_status' => 1, 'web_id' => 2];
+        $where = ['film_status' => 1, 'web_id' => 2,'id'=>626];
         $list = $this->db->get_where('ci_film_resource', $where)->result_array();
         $time = time();
         foreach ($list as $item) {
@@ -206,7 +206,10 @@ class Crawl extends CI_Controller
                 $subList[1] = $nameList[0];
                 $subList[2] = $nameList[1];
             }
-            preg_match('/\d+/', $subList[1], $now_episode);
+            preg_match_all('/\d+/', $subList[1], $now_episode);
+            if(count($now_episode[0]) == 3){
+                $now_episode[0] = 1;
+            }
             $filmStarring = substr($subList[5], strpos($subList[5], '】') + 3, strlen($subList[5]));
             $firstTimeStr = substr($subList[7], strpos($subList[7], '】') + 3, strlen($subList[7]));
             $timePattern = '/\d+/';
