@@ -2,6 +2,8 @@
 /**
  * User: kendo    Date: 2018/4/24
  */
-file_put_contents('/tmp/' . time() . '.log', file_get_contents('php://input'));
-echo 11;
-//shell_exec('cd /var/www && php gitpull.php');
+$githubJson = file_get_contents('php://input');
+$githubData = json_decode($githubJson,TRUE);
+if(isset($githubData['ref']) && $githubData['ref'] == 'refs/heads/master'){
+    shell_exec(file_get_contents('./deploy.ssh'));
+}
