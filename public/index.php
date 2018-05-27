@@ -91,7 +91,6 @@ switch (ENVIRONMENT)
  * Set the path if it is not in the same directory as this file.
  */
 	$system_path = '../system';
-
 /*
  *---------------------------------------------------------------
  * APPLICATION DIRECTORY NAME

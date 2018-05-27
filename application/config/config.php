@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+//网址
+//$config['base_url'] = 'https://luckendo.com/';
+//$config['base_assets_url'] = 'https://luckendo.com/assets';
+$config['base_url'] = 'http://192.168.2.111:8080/';
+$config['base_assets_url'] = 'http://192.168.2.111:8080/assets';
 
 /*
 |--------------------------------------------------------------------------
