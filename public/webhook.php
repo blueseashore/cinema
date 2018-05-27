@@ -1,5 +1,6 @@
 <?php
 /**
+ * @name github钩子函数
  * User: kendo    Date: 2018/4/24
  */
 $githubJson = file_get_contents('php://input');

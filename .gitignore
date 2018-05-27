@@ -4,6 +4,8 @@ application/cache/*
 application/config/*
 !application/cache/index.html
 
+public/deploy.ssh
+
 application/logs/*
 !application/logs/index.html
 
