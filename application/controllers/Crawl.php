@@ -252,6 +252,5 @@ class Crawl extends CI_Controller
                 $this->episode_model->save_episode($episode);
             }
         }
-
     }
 }
