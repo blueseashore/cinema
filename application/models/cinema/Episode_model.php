@@ -31,7 +31,7 @@ class Episode_model extends CI_Model
 
     public function get(array $param)
     {
-        $this->db->where('e.film_id', $param['film_id']);
+        $this->db->where('f.film_id', $param['film_id']);
         if (!empty($param['episode_num'])) {
             $this->db->where('e.episode_num', intval($param['episode_num']));
         }
