@@ -14,6 +14,9 @@ class Cinema extends CI_Controller
         $this->load->model('cinema/episode_model');
     }
 
+    /**
+     * @name 影院首页
+     */
     public function index()
     {
         $param['search'] = $this->input->get('search');
