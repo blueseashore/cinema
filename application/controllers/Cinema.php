@@ -72,7 +72,6 @@ class Cinema extends CI_Controller
         $param['film_id'] = $this->input->get('film_id');
         $param['episode_num'] = $this->input->get('episode_num');
         $data['list'] = $this->episode_model->get($param);
-//        echo json_encode($this->episode_model->get($param));
         echo $this->load->view('cinema/episode', $data, TRUE);
     }
 
