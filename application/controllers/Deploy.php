@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * 自动部署
+ * Class Deploy
+ */
 class Deploy extends CI_Controller
 {
     public function index()
