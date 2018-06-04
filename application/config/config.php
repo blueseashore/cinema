@@ -24,8 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //网址
-$config['base_url'] = 'https://uckendo.com/';
-$config['base_assets_url'] = 'https://uckendo.com/assets';
+$config['base_url'] = 'http://uckendo.com/';
+$config['base_assets_url'] = 'http://uckendo.com/assets';
 //$config['base_url'] = 'http://192.168.2.111:8080/';
 //$config['base_assets_url'] = 'http://192.168.2.111:8080/assets';
 

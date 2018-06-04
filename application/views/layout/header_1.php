@@ -72,7 +72,7 @@
 <div id="header">
     <div class="wrap">
         <i class="menu_open"></i>
-        <div class="logo"><a href="http://luckendo.com/" title="模板之家"><img src="<?=$this->config->item('base_assets_url')?>/css/logo.png"/></a></div>
+        <div class="logo"><a href="http://uckendo.com/" title="模板之家"><img src="<?=$this->config->item('base_assets_url')?>/css/logo.png"/></a></div>
         <i class="search_open"></i>
     </div>
     <div class="logo_msk"></div>
