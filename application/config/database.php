@@ -77,7 +77,6 @@ $db['default'] = array(
     'dsn'	=> '',
     'hostname' => '127.0.0.1',
     'username' => 'root',
-    'password' => 'mysql@=1990926',
     'password' => '123456',
     'database' => 'cinema',
     'dbdriver' => 'mysqli',
