@@ -111,4 +111,10 @@ class Welcome extends CI_Controller
             echo '<hr>';
         }
     }
+
+    public function home(){
+        for ($i = 1; $i <= 4; $i++) {
+            echo "<img src='./assets/images/{$i}.jpg'>";
+        }
+    }
 }
